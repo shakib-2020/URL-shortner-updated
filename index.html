@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>URL shortner web app</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <p class="title">Write Long URL:</p>
+        <div class="input__area">
+          <input id="long_input" type="text" placeholder="Type long URL here" />
+          <button id="button_one" onclick="getShortUrl()">
+            Generate Short URL
+          </button>
+        </div>
+        <div class="output__area">
+          <p>Your Short URL is:<p id="short__url__output"></p></p>
+          <button class="copy__button" onclick="copyTextOne()">copy</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <p class="title">Write Short URL:</p>
+        <div class="input__area">
+            <input type="text" placeholder="Type short URL here" />
+            <button id="button_two" onclick="getLongUrl()">Retrieve Long URL</button>
+        </div>
+        <div class="output__area">
+          <p>Your Original URL is:<p id="long__url__output"></p></p>
+          <button class="copy__button" onclick="copyTextTwo()">copy</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
